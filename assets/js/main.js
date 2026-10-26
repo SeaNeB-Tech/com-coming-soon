@@ -312,15 +312,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function openLocationDropdown() {
     state.isLocationDropdownOpen = true;
-    locationDropdown.classList.add('is-open');
-    locationPickerBtn.setAttribute('aria-expanded', 'true');
+    if (locationDropdown) locationDropdown.classList.add('is-open');
+    if (locationPickerBtn) locationPickerBtn.setAttribute('aria-expanded', 'true');
     closeAppMenu();
   }
 
   function closeLocationDropdown() {
     state.isLocationDropdownOpen = false;
-    locationDropdown.classList.remove('is-open');
-    locationPickerBtn.setAttribute('aria-expanded', 'false');
+    if (locationDropdown) locationDropdown.classList.remove('is-open');
+    if (locationPickerBtn) locationPickerBtn.setAttribute('aria-expanded', 'false');
   }
 
   if (locationPickerBtn) {
@@ -489,12 +489,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // If click was outside location dropdown and picker button, close location dropdown
-    if (state.isLocationDropdownOpen && !locationDropdown.contains(e.target) && !locationPickerBtn.contains(e.target)) {
+    if (state.isLocationDropdownOpen && locationDropdown && locationPickerBtn && !locationDropdown.contains(e.target) && !locationPickerBtn.contains(e.target)) {
       closeLocationDropdown();
     }
 
     // If click was outside search form, close search suggestions
-    if (searchSuggestions && !searchForm.contains(e.target)) {
+    if (searchSuggestions && searchForm && !searchForm.contains(e.target)) {
       closeSearchSuggestions();
     }
 

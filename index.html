@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SeaNeb.com — Search Your Local Economy | Hyperlocal Business Discovery</title>
-  
+
   <!-- SEO & Social Meta Tags -->
-  <meta name="description" content="Search your local economy with SeaNeb.com. Discover trusted local businesses, products, services, restaurants, doctors, salons, and exclusive community offers in your city.">
-  <meta name="keywords" content="SeaNeb, local search, businesses near me, local economy, Anand Gujarat, local directory, restaurants, doctors, salons, home services">
+  <meta name="description"
+    content="Search your local economy with SeaNeb.com. Discover trusted local businesses, products, services, restaurants, doctors, salons, and exclusive community offers in your city.">
+  <meta name="keywords"
+    content="SeaNeb, local search, businesses near me, local economy, Anand Gujarat, local directory, restaurants, doctors, salons, home services">
   <meta name="author" content="SeaNeb.com">
   <meta name="theme-color" content="#0866F5">
 
@@ -15,7 +18,8 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://seaneb.com/">
   <meta property="og:title" content="SeaNeb.com — Search Your Local Economy">
-  <meta property="og:description" content="Discover trusted local businesses, products, services, and offers in your city with SeaNeb.">
+  <meta property="og:description"
+    content="Discover trusted local businesses, products, services, and offers in your city with SeaNeb.">
   <meta property="og:image" content="assets/images/hero-pin.svg">
 
   <!-- Favicon -->
@@ -24,11 +28,14 @@
   <!-- Google Fonts: Plus Jakarta Sans for ultra-clean modern typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css?v=2.4">
 </head>
+
 <body>
 
   <!-- ========================================================================
@@ -36,11 +43,13 @@
        ======================================================================== -->
   <header class="site-header" id="site-header">
     <div class="header-container">
-      
+
       <!-- Left: Official SeaNeb Brand Logo (Icon on left + "Seaneb" title on right matching center style) -->
       <div class="header-brand">
         <a href="/" class="brand-link" aria-label="SeaNeb Home">
-          <img src="https://www.seaneb.com/images/logo/apple-touch-icon.png" alt="SeaNeb" class="brand-logo-pin" id="brand-logo-img" width="34" height="34" onerror="this.onerror=null; this.src='assets/images/seaneb-icon.png';">
+          <img src="https://www.seaneb.com/images/logo/apple-touch-icon.png" alt="SeaNeb" class="brand-logo-pin"
+            id="brand-logo-img" width="34" height="34"
+            onerror="this.onerror=null; this.src='assets/images/seaneb-icon.png';">
           <span class="brand-logo-text">Seaneb</span>
         </a>
       </div>
@@ -56,134 +65,46 @@
 
       <!-- 1. Hero Centered Official SeaNeb Brand Icon -->
       <div class="hero-brand-mark" aria-hidden="true">
-        <img src="https://www.seaneb.com/images/logo/apple-touch-icon.png" alt="SeaNeb" class="hero-pin-img" id="hero-brand-img" width="76" height="76" onerror="this.onerror=null; this.src='assets/images/seaneb-icon.png';">
+        <img src="https://www.seaneb.com/images/logo/apple-touch-icon.png" alt="SeaNeb" class="hero-pin-img"
+          id="hero-brand-img" width="76" height="76"
+          onerror="this.onerror=null; this.src='assets/images/seaneb-icon.png';">
       </div>
 
       <!-- 2. Hero Headings -->
       <h1 class="hero-title">Seaneb</h1>
       <p class="hero-subtitle">Search Your Local Economy</p>
 
-      <!-- 3. Prominent Search Bar with Location Selection -->
-      <div class="search-bar-wrapper">
-        <form class="search-form" id="search-form" role="search">
-          
-          <!-- Query Search Input Section -->
-          <div class="search-query-section">
-            <svg class="search-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-            <label for="search-input" class="sr-only">Search businesses, products, services, offers</label>
-            <input 
-              type="text" 
-              class="search-input" 
-              id="search-input" 
-              placeholder="Search businesses, products, services, offers..."
-              autocomplete="off"
-              spellcheck="false"
-            />
-          </div>
-
-          <!-- Divider line -->
-          <div class="search-divider" aria-hidden="true"></div>
-
-          <!-- Location Selector Section -->
-          <div class="search-location-section">
-            <button 
-              type="button" 
-              class="location-picker-btn" 
-              id="location-picker-btn" 
-              aria-label="Select location" 
-              aria-expanded="false" 
-              aria-haspopup="true"
-            >
-              <svg class="location-icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-              <span class="location-current-text" id="current-location-text">Anand, Gujarat</span>
-              <svg class="location-chevron-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </button>
-
-            <!-- Location Selector Dropdown -->
-            <div class="location-dropdown" id="location-dropdown" role="region" aria-label="Location Picker">
-              <div class="location-dropdown-header">
-                <span class="location-dropdown-title">Choose Location</span>
-              </div>
-              <button type="button" class="detect-location-btn" id="detect-location-btn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
-                </svg>
-                <span>Use Current Location</span>
-              </button>
-              <ul class="location-list" id="location-list">
-                <!-- Populated dynamically via SeaNebAPI.LocationService.getLocations() -->
-              </ul>
-            </div>
-          </div>
-
-          <!-- Blue Search Trigger Button -->
-          <button type="submit" class="search-submit-btn" id="search-submit-btn" aria-label="Search local economy">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </button>
-
-        </form>
-
-        <!-- Live Search Suggestions Overlay -->
-        <div class="search-suggestions-dropdown" id="search-suggestions">
-          <div class="suggestions-title">Trending Searches</div>
-          <ul class="suggestions-list">
-            <li>
-              <button type="button" class="suggestion-item-btn" data-value="Restaurants &amp; Cafes">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                <span>Top rated Restaurants &amp; Cafes in Anand</span>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="suggestion-item-btn" data-value="Grocery &amp; Supermarkets">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                <span>Fresh Grocery &amp; Organic Supermarkets</span>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="suggestion-item-btn" data-value="Home Services &amp; Electricians">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                <span>Verified Electricians &amp; Plumbers</span>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
 
       <!-- 4. Ecosystem Products Row (Only 3 Products: Seaneb App, Seaneb Jobs, Tiffin Service) -->
       <section class="products-showcase-container" id="products-showcase" aria-label="SeaNeb Products">
         <div class="products-showcase-row" id="products-showcase-row">
-          
+
           <!-- 1. Seaneb App (API CDN Icon) -->
-          <a href="https://seaneb.com" class="showcase-product-card" id="showcase-seaneb-app">
+          <a href="https://seaneb.com" class="showcase-product-card" id="showcase-seaneb-app" target="_blank" rel="noopener noreferrer">
             <div class="showcase-icon-box">
-              <img src="https://www.seaneb.com/images/logo/apple-touch-icon.png" alt="Seaneb App" class="showcase-icon-img" width="38" height="38" onerror="this.onerror=null; this.src='assets/images/product-icons/seaneb-icon.png';">
+              <img src="https://www.seaneb.com/images/logo/apple-touch-icon.png" alt="Seaneb App"
+                class="showcase-icon-img" width="38" height="38"
+                onerror="this.onerror=null; this.src='assets/images/product-icons/seaneb-icon.png';">
             </div>
             <span class="showcase-product-name">Seaneb App</span>
           </a>
 
           <!-- 2. Seaneb Jobs (API S3 CDN Logo) -->
-          <a href="https://jobs.seaneb.com" class="showcase-product-card" id="showcase-seaneb-jobs">
+          <a href="https://jobs.seaneb.com" class="showcase-product-card" id="showcase-seaneb-jobs" target="_blank">
             <div class="showcase-icon-box">
-              <img src="https://seaneb-bucket.blr1.digitaloceanspaces.com/in/product/jobs/favicon/jobs-favicon.webp" alt="Seaneb Jobs" class="showcase-icon-img" width="38" height="38" onerror="this.onerror=null; this.src='assets/images/product-icons/jobs.svg';">
+              <img src="https://seaneb-bucket.blr1.digitaloceanspaces.com/in/product/jobs/favicon/jobs-favicon.webp"
+                alt="Seaneb Jobs" class="showcase-icon-img" width="38" height="38"
+                onerror="this.onerror=null; this.src='assets/images/product-icons/jobs.svg';">
             </div>
             <span class="showcase-product-name">Seaneb Jobs</span>
           </a>
 
           <!-- 3. Tiffin Service (API S3 CDN Logo) -->
-          <a href="https://www.tiffinservice.app" class="showcase-product-card" id="showcase-tiffin-service">
+          <a href="https://tiffinservice.app" class="showcase-product-card" id="showcase-tiffin-service" target="_blank" >
             <div class="showcase-icon-box">
-              <img src="https://seaneb-bucket.blr1.digitaloceanspaces.com/in/product/tiffin/favicon/tiffin-favicon.png" alt="Tiffin Service" class="showcase-icon-img" width="38" height="38" onerror="this.onerror=null; this.src='assets/images/product-icons/tiffin.svg';">
+              <img src="https://seaneb-bucket.blr1.digitaloceanspaces.com/in/product/tiffin/favicon/tiffin-favicon.png"
+                alt="Tiffin Service" class="showcase-icon-img" width="38" height="38"
+                onerror="this.onerror=null; this.src='assets/images/product-icons/tiffin.svg';">
             </div>
             <span class="showcase-product-name">Tiffin Service</span>
           </a>
@@ -210,7 +131,8 @@
        Toast Notification Container
        ======================================================================== -->
   <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
       <polyline points="22 4 12 14.01 9 11.01"></polyline>
     </svg>
@@ -221,4 +143,5 @@
   <script src="assets/js/api.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
