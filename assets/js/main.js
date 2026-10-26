@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ==========================================================================
   // 3. Dynamic Products Showcase Row (Seaneb App, Seaneb Jobs, Tiffin Service)
-  // ==========================================================================
+  // ========================================================================== ==
   async function loadShowcaseProducts() {
     if (!showcaseRow) return;
 
