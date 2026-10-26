@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 52" width="220" height="52" fill="none">
+  <defs>
+    <linearGradient id="logoGrad" x1="6" y1="6" x2="38" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0866F5"/>
+      <stop offset="100%" stop-color="#00A3FF"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="12" y1="12" x2="32" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E0F2FE"/>
+    </linearGradient>
+    <filter id="logoShadow" x="0" y="2" width="46" height="52" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#0866F5" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Logo Mark (Pin + Sea/Compass Wave) -->
+  <g filter="url(#logoShadow)">
+    <path d="M22 6C13.1634 6 6 13.1634 6 22C6 33.5 22 45 22 45C22 45 38 33.5 38 22C38 13.1634 30.8366 6 22 6Z" fill="url(#logoGrad)"/>
+    <!-- Compass & Nautical Sea Wave Inner Contour -->
+    <circle cx="22" cy="20" r="9" fill="url(#waveGrad)"/>
+    <!-- Subtle Inner Pin Center Point -->
+    <path d="M17 21C18.2 18.5 20.8 17 23.5 18C25.2 18.6 26.2 19.8 26.5 21C25.2 21.8 23.5 21.5 22 20.5C20.5 19.5 18.5 20 17 21Z" fill="#0866F5"/>
+    <circle cx="22" cy="20" r="3.2" fill="#0866F5"/>
+  </g>
+
+  <!-- Wordmark "SeaNeb" -->
+  <text x="50" y="32" font-family="'Plus Jakarta Sans', 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="25" font-weight="800" letter-spacing="-0.5" fill="#101B31">
+    Sea<tspan fill="#0866F5">Neb</tspan>
+  </text>
+  <!-- ".com" badge -->
+  <rect x="154" y="17" width="44" height="17" rx="8.5" fill="#EFF6FF" stroke="#DBEAFE" stroke-width="1"/>
+  <text x="162" y="29" font-family="'Plus Jakarta Sans', 'Noto Sans', -apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#0866F5" letter-spacing="0.2">.com</text>
+</svg>

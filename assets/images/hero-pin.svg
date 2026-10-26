@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84" width="84" height="84" fill="none">
+  <defs>
+    <linearGradient id="heroPinGrad" x1="14" y1="8" x2="70" y2="76" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0866F5"/>
+      <stop offset="60%" stop-color="#0256D6"/>
+      <stop offset="100%" stop-color="#003EAA"/>
+    </linearGradient>
+    <linearGradient id="heroGlow" x1="42" y1="0" x2="42" y2="84" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0866F5" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="heroShadow" x="10" y="8" width="64" height="72" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0866F5" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow Ring -->
+  <circle cx="42" cy="42" r="40" fill="url(#heroGlow)"/>
+  <circle cx="42" cy="42" r="34" stroke="#DBEAFE" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Main Hero Pin Body -->
+  <g filter="url(#heroShadow)">
+    <path d="M42 14C28.1929 14 17 25.1929 17 39C17 56.5 42 72 42 72C42 72 67 56.5 67 39C67 25.1929 55.8071 14 42 14Z" fill="url(#heroPinGrad)"/>
+    <!-- Highlight Reflection -->
+    <path d="M42 16C30 16 20 25.5 19 37C21 28 31 20 42 19C53 20 63 28 65 37C64 25.5 54 16 42 16Z" fill="#FFFFFF" fill-opacity="0.2"/>
+    <!-- Inner White Core Circle -->
+    <circle cx="42" cy="37" r="14" fill="#FFFFFF"/>
+    <!-- Center Wave / Navigation Star Motif -->
+    <path d="M42 27L44.8 33.5L51.5 35L46 39.5L48 46.5L42 42.5L36 46.5L38 39.5L32.5 35L39.2 33.5L42 27Z" fill="#0866F5"/>
+    <circle cx="42" cy="37" r="3.5" fill="#FFFFFF"/>
+  </g>
+</svg>

@@ -1,0 +1,505 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 340" width="100%" height="auto" preserveAspectRatio="xMidYEnd meet" fill="none">
+  <defs>
+    <linearGradient id="skyGrad" x1="800" y1="0" x2="800" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F5F9FF" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#EFF6FF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#E0F2FE" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <linearGradient id="roadGrad" x1="0" y1="310" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+
+    <linearGradient id="sidewalkGrad" x1="0" y1="285" x2="0" y2="310" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+
+    <!-- Pin Gradients -->
+    <linearGradient id="pinBlue" x1="0" y1="0" x2="0" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#0866F5"/>
+    </linearGradient>
+    <linearGradient id="pinEmerald" x1="0" y1="0" x2="0" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="pinRose" x1="0" y1="0" x2="0" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FB7185"/>
+      <stop offset="100%" stop-color="#E11D48"/>
+    </linearGradient>
+    <linearGradient id="pinAmber" x1="0" y1="0" x2="0" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+
+    <filter id="softDrop" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background Sky / Atmosphere -->
+  <rect width="1600" height="340" fill="url(#skyGrad)"/>
+
+  <!-- Background Skyline Silhouettes (Layer 1 - Soft Horizon) -->
+  <g fill="#DBEAFE" fill-opacity="0.45">
+    <rect x="40" y="80" width="70" height="205" rx="4"/>
+    <rect x="130" y="60" width="90" height="225" rx="4"/>
+    <polygon points="175,35 130,60 220,60"/>
+    <rect x="250" y="95" width="80" height="190" rx="4"/>
+    <rect x="360" y="70" width="110" height="215" rx="4"/>
+    <rect x="500" y="85" width="75" height="200" rx="4"/>
+    <rect x="600" y="50" width="130" height="235" rx="4"/>
+    <polygon points="665,25 600,50 730,50"/>
+    <rect x="760" y="90" width="90" height="195" rx="4"/>
+    <rect x="880" y="65" width="120" height="220" rx="4"/>
+    <rect x="1030" y="85" width="85" height="200" rx="4"/>
+    <rect x="1140" y="55" width="105" height="230" rx="4"/>
+    <polygon points="1192,30 1140,55 1245,55"/>
+    <rect x="1270" y="75" width="95" height="210" rx="4"/>
+    <rect x="1390" y="60" width="115" height="225" rx="4"/>
+    <rect x="1530" y="90" width="60" height="195" rx="4"/>
+  </g>
+
+  <!-- Background Windows & Architectural Lines -->
+  <g fill="#FFFFFF" fill-opacity="0.6">
+    <!-- Building windows -->
+    <rect x="150" y="75" width="12" height="18" rx="1"/>
+    <rect x="170" y="75" width="12" height="18" rx="1"/>
+    <rect x="190" y="75" width="12" height="18" rx="1"/>
+    <rect x="150" y="105" width="12" height="18" rx="1"/>
+    <rect x="170" y="105" width="12" height="18" rx="1"/>
+    <rect x="190" y="105" width="12" height="18" rx="1"/>
+    <rect x="620" y="70" width="16" height="22" rx="1"/>
+    <rect x="650" y="70" width="16" height="22" rx="1"/>
+    <rect x="680" y="70" width="16" height="22" rx="1"/>
+    <rect x="620" y="102" width="16" height="22" rx="1"/>
+    <rect x="650" y="102" width="16" height="22" rx="1"/>
+    <rect x="680" y="102" width="16" height="22" rx="1"/>
+    <rect x="900" y="85" width="15" height="20" rx="1"/>
+    <rect x="930" y="85" width="15" height="20" rx="1"/>
+    <rect x="960" y="85" width="15" height="20" rx="1"/>
+    <rect x="1160" y="75" width="14" height="20" rx="1"/>
+    <rect x="1190" y="75" width="14" height="20" rx="1"/>
+    <rect x="1220" y="75" width="14" height="20" rx="1"/>
+  </g>
+
+  <!-- Midground Distant Greenery & Trees -->
+  <g fill="#A7F3D0" fill-opacity="0.7">
+    <circle cx="100" cy="180" r="35"/>
+    <circle cx="230" cy="190" r="28"/>
+    <circle cx="470" cy="185" r="32"/>
+    <circle cx="750" cy="190" r="30"/>
+    <circle cx="1010" cy="185" r="34"/>
+    <circle cx="1260" cy="188" r="29"/>
+    <circle cx="1510" cy="182" r="36"/>
+  </g>
+
+  <!-- Pavement / Sidewalk & Road -->
+  <rect x="0" y="275" width="1600" height="35" fill="url(#sidewalkGrad)"/>
+  <line x1="0" y1="275" x2="1600" y2="275" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="0" y="310" width="1600" height="30" fill="url(#roadGrad)"/>
+  
+  <!-- Pedestrian Crosswalk Markings -->
+  <g fill="#FFFFFF" fill-opacity="0.9">
+    <rect x="440" y="314" width="30" height="22" rx="2"/>
+    <rect x="480" y="314" width="30" height="22" rx="2"/>
+    <rect x="520" y="314" width="30" height="22" rx="2"/>
+    <rect x="560" y="314" width="30" height="22" rx="2"/>
+    <rect x="1100" y="314" width="30" height="22" rx="2"/>
+    <rect x="1140" y="314" width="30" height="22" rx="2"/>
+    <rect x="1180" y="314" width="30" height="22" rx="2"/>
+    <rect x="1220" y="314" width="30" height="22" rx="2"/>
+  </g>
+
+  <!-- ==================== LOCAL SHOPS & STOREFRONTS ==================== -->
+
+  <!-- SHOP 1: "SEANEB CAFE" (Left) -->
+  <g id="shop-cafe">
+    <!-- Building Body -->
+    <rect x="50" y="145" width="170" height="130" rx="3" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <!-- Upper Story / Signboard -->
+    <rect x="45" y="140" width="180" height="30" rx="4" fill="#0866F5"/>
+    <text x="135" y="160" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">SEANEB CAFE</text>
+    <!-- Awning (Blue & White Striped) -->
+    <g>
+      <path d="M40 170L55 195H215L230 170H40Z" fill="#0866F5"/>
+      <polygon points="65,170 75,195 95,195 85,170" fill="#FFFFFF"/>
+      <polygon points="105,170 115,195 135,195 125,170" fill="#FFFFFF"/>
+      <polygon points="145,170 155,195 175,195 165,170" fill="#FFFFFF"/>
+      <polygon points="185,170 195,195 215,195 205,170" fill="#FFFFFF"/>
+      <!-- Scallop bottom hem -->
+      <circle cx="55" cy="195" r="5" fill="#0866F5"/>
+      <circle cx="75" cy="195" r="5" fill="#FFFFFF"/>
+      <circle cx="95" cy="195" r="5" fill="#0866F5"/>
+      <circle cx="115" cy="195" r="5" fill="#FFFFFF"/>
+      <circle cx="135" cy="195" r="5" fill="#0866F5"/>
+      <circle cx="155" cy="195" r="5" fill="#FFFFFF"/>
+      <circle cx="175" cy="195" r="5" fill="#0866F5"/>
+      <circle cx="195" cy="195" r="5" fill="#FFFFFF"/>
+      <circle cx="215" cy="195" r="5" fill="#0866F5"/>
+    </g>
+    <!-- Glass Display Window -->
+    <rect x="65" y="205" width="75" height="60" rx="3" fill="#F0F9FF" stroke="#93C5FD" stroke-width="1.5"/>
+    <!-- Window Reflection & Coffee Display -->
+    <line x1="75" y1="210" x2="130" y2="255" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="102" cy="245" rx="14" ry="4" fill="#E2E8F0"/>
+    <rect x="94" y="235" width="16" height="10" rx="2" fill="#D97706"/>
+    <!-- Cafe Door -->
+    <rect x="155" y="205" width="45" height="70" rx="2" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <rect x="162" y="212" width="31" height="30" rx="2" fill="#E0F2FE"/>
+    <circle cx="192" cy="245" r="3" fill="#D97706"/>
+    <!-- Outdoor Cafe Umbrella & Table -->
+    <path d="M20 230C20 215 42 205 42 205C42 205 64 215 64 230H20Z" fill="#F59E0B"/>
+    <line x1="42" y1="205" x2="42" y2="275" stroke="#78350F" stroke-width="2.5"/>
+    <ellipse cx="42" cy="260" rx="14" ry="4" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+    <line x1="42" y1="260" x2="42" y2="275" stroke="#94A3B8" stroke-width="2"/>
+    <!-- Chalkboard Sign -->
+    <polygon points="230,248 245,248 250,275 225,275" fill="#334155"/>
+    <rect x="230" y="252" width="15" height="18" fill="#1E293B"/>
+    <line x1="233" y1="256" x2="242" y2="256" stroke="#FEF08A" stroke-width="1.5"/>
+    <line x1="233" y1="261" x2="240" y2="261" stroke="#FEF08A" stroke-width="1.5"/>
+  </g>
+
+  <!-- SHOP 2: "ORGANIC MARKET" (Fresh Grocery) -->
+  <g id="shop-grocery">
+    <rect x="265" y="130" width="165" height="145" rx="3" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <!-- Signboard -->
+    <rect x="260" y="125" width="175" height="28" rx="4" fill="#059669"/>
+    <text x="347" y="144" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.8">ORGANIC MARKET</text>
+    <!-- Awning (Green & Cream) -->
+    <path d="M255 153L268 180H428L440 153H255Z" fill="#059669"/>
+    <polygon points="280,153 288,180 308,180 300,153" fill="#ECFDF5"/>
+    <polygon points="320,153 328,180 348,180 340,153" fill="#ECFDF5"/>
+    <polygon points="360,153 368,180 388,180 380,153" fill="#ECFDF5"/>
+    <polygon points="400,153 408,180 428,180 420,153" fill="#ECFDF5"/>
+    <!-- Large Front Market Windows -->
+    <rect x="280" y="190" width="80" height="55" rx="2" fill="#F0FDF4" stroke="#A7F3D0" stroke-width="1.5"/>
+    <!-- Market Door -->
+    <rect x="375" y="190" width="45" height="85" rx="2" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <rect x="382" y="198" width="31" height="40" rx="2" fill="#D1FAE5"/>
+    <circle cx="412" cy="240" r="3" fill="#059669"/>
+    <!-- Wooden Fruit Baskets outside on sidewalk -->
+    <rect x="280" y="252" width="26" height="18" rx="2" fill="#D97706" stroke="#B45309" stroke-width="1"/>
+    <!-- Oranges -->
+    <circle cx="286" cy="254" r="4" fill="#F97316"/>
+    <circle cx="293" cy="254" r="4" fill="#F97316"/>
+    <circle cx="300" cy="254" r="4" fill="#F97316"/>
+    <!-- Apples box -->
+    <rect x="312" y="252" width="26" height="18" rx="2" fill="#D97706" stroke="#B45309" stroke-width="1"/>
+    <circle cx="318" cy="254" r="4" fill="#EF4444"/>
+    <circle cx="325" cy="254" r="4" fill="#EF4444"/>
+    <circle cx="332" cy="254" r="4" fill="#10B981"/>
+    <!-- Planter Box with green shrubs -->
+    <rect x="345" y="255" width="22" height="15" rx="2" fill="#64748B"/>
+    <circle cx="351" cy="250" r="6" fill="#10B981"/>
+    <circle cx="361" cy="249" r="7" fill="#059669"/>
+  </g>
+
+  <!-- SHOP 3: "CITY BOOKSTORE" (Brick & Arch Facade) -->
+  <g id="shop-bookstore">
+    <!-- Warm Brick Building -->
+    <rect x="460" y="115" width="180" height="160" rx="4" fill="#FFF7ED" stroke="#FDBA74" stroke-width="2"/>
+    <!-- Arch cornice -->
+    <path d="M460 115H640V95C640 95 550 85 460 95V115Z" fill="#C2410C"/>
+    <text x="550" y="110" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">BOOKSTORE &amp; CO.</text>
+    <!-- Arched Windows -->
+    <path d="M480 160C480 135 525 135 525 160V225H480V160Z" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+    <!-- Bookshelf Rows inside window -->
+    <line x1="485" y1="170" x2="520" y2="170" stroke="#D97706" stroke-width="2"/>
+    <line x1="485" y1="190" x2="520" y2="190" stroke="#D97706" stroke-width="2"/>
+    <line x1="485" y1="210" x2="520" y2="210" stroke="#D97706" stroke-width="2"/>
+    <!-- Vertical Book spines -->
+    <rect x="488" y="174" width="4" height="16" fill="#2563EB"/>
+    <rect x="494" y="176" width="5" height="14" fill="#DC2626"/>
+    <rect x="501" y="172" width="6" height="18" fill="#16A34A"/>
+    <rect x="509" y="175" width="4" height="15" fill="#D97706"/>
+    <!-- Bookshop Double Door -->
+    <rect x="545" y="150" width="75" height="125" rx="3" fill="#7C2D12"/>
+    <rect x="552" y="160" width="28" height="55" rx="2" fill="#FEF3C7"/>
+    <rect x="585" y="160" width="28" height="55" rx="2" fill="#FEF3C7"/>
+    <circle cx="576" cy="220" r="3" fill="#FBBF24"/>
+    <circle cx="590" cy="220" r="3" fill="#FBBF24"/>
+    <!-- Wall Lantern -->
+    <circle cx="632" cy="140" r="5" fill="#FBBF24"/>
+    <path d="M632 135L636 148H628L632 135Z" fill="#451A03"/>
+    <line x1="632" y1="135" x2="640" y2="135" stroke="#451A03" stroke-width="2"/>
+  </g>
+
+  <!-- CENTER PLAZA / TOWN PAVILION CLOCK TOWER (Landmark Hub) -->
+  <g id="center-hub">
+    <!-- Majestic Central Facade -->
+    <rect x="670" y="80" width="240" height="195" rx="4" fill="#FFFFFF" stroke="#0866F5" stroke-width="2"/>
+    <!-- Triangular Pediment -->
+    <polygon points="790,30 660,80 920,80" fill="#0866F5"/>
+    <circle cx="790" cy="60" r="14" fill="#FFFFFF"/>
+    <!-- Clock Hands inside circular medallion -->
+    <circle cx="790" cy="60" r="11" fill="#EFF6FF" stroke="#0866F5" stroke-width="1.5"/>
+    <line x1="790" y1="60" x2="790" y2="54" stroke="#0866F5" stroke-width="2" stroke-linecap="round"/>
+    <line x1="790" y1="60" x2="796" y2="60" stroke="#0866F5" stroke-width="2" stroke-linecap="round"/>
+    <!-- Header Title -->
+    <rect x="700" y="88" width="180" height="25" rx="3" fill="#EFF6FF"/>
+    <text x="790" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#0866F5" text-anchor="middle" letter-spacing="1">SEANEB LOCAL SQUARE</text>
+    <!-- Architectural Classical Columns -->
+    <g fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5">
+      <rect x="685" y="120" width="18" height="150" rx="2"/>
+      <rect x="735" y="120" width="18" height="150" rx="2"/>
+      <rect x="825" y="120" width="18" height="150" rx="2"/>
+      <rect x="875" y="120" width="18" height="150" rx="2"/>
+    </g>
+    <!-- Central Grand Glass Entrance -->
+    <path d="M765 140C765 125 815 125 815 140V275H765V140Z" fill="#E0F2FE" stroke="#38BDF8" stroke-width="1.5"/>
+    <line x1="790" y1="130" x2="790" y2="275" stroke="#38BDF8" stroke-width="1.5"/>
+    <!-- Grand steps leading into plaza -->
+    <polygon points="740,270 840,270 855,275 725,275" fill="#E2E8F0"/>
+    <!-- Flower urns at entrance -->
+    <rect x="740" y="260" width="12" height="12" rx="2" fill="#94A3B8"/>
+    <circle cx="746" cy="256" r="6" fill="#F43F5E"/>
+    <rect x="828" y="260" width="12" height="12" rx="2" fill="#94A3B8"/>
+    <circle cx="834" cy="256" r="6" fill="#F43F5E"/>
+  </g>
+
+  <!-- SHOP 4: "FASHION & BOUTIQUE" (Modern Soft Coral / Rose) -->
+  <g id="shop-boutique">
+    <rect x="940" y="130" width="170" height="145" rx="3" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="935" y="125" width="180" height="28" rx="4" fill="#E11D48"/>
+    <text x="1025" y="144" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">MODERN BOUTIQUE</text>
+    <!-- Awning (Rose & White) -->
+    <path d="M930 153L942 180H1108L1120 153H930Z" fill="#E11D48"/>
+    <polygon points="955,153 963,180 983,180 975,153" fill="#FFF1F2"/>
+    <polygon points="995,153 1003,180 1023,180 1015,153" fill="#FFF1F2"/>
+    <polygon points="1035,153 1043,180 1063,180 1055,153" fill="#FFF1F2"/>
+    <polygon points="1075,153 1083,180 1103,180 1095,153" fill="#FFF1F2"/>
+    <!-- Glass Showroom Window with Mannequin & Dress -->
+    <rect x="955" y="190" width="90" height="65" rx="2" fill="#FFF1F2" stroke="#FDA4AF" stroke-width="1.5"/>
+    <!-- Mannequin stand -->
+    <circle cx="985" cy="205" r="5" fill="#F43F5E"/>
+    <path d="M980 210H990L993 232H977L980 210Z" fill="#E11D48"/>
+    <line x1="985" y1="232" x2="985" y2="248" stroke="#881337" stroke-width="2"/>
+    <ellipse cx="985" cy="248" rx="8" ry="2" fill="#881337"/>
+    <!-- Boutique Door -->
+    <rect x="1055" y="190" width="45" height="85" rx="2" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <rect x="1062" y="198" width="31" height="42" rx="2" fill="#FFE4E6"/>
+    <circle cx="1092" cy="240" r="3" fill="#E11D48"/>
+  </g>
+
+  <!-- SHOP 5: "MEDICARE & CLINIC" (Teal / Medical) -->
+  <g id="shop-clinic">
+    <rect x="1140" y="125" width="165" height="150" rx="3" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="1135" y="120" width="175" height="28" rx="4" fill="#0D9488"/>
+    <text x="1222" y="139" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.8">CLINIC &amp; PHARMACY</text>
+    <!-- Medical Cross Sign -->
+    <g transform="translate(1212, 160)">
+      <circle cx="10" cy="10" r="14" fill="#CCFBF1" stroke="#0D9488" stroke-width="1.5"/>
+      <rect x="7" y="2" width="6" height="16" fill="#0D9488"/>
+      <rect x="2" y="7" width="16" height="6" fill="#0D9488"/>
+    </g>
+    <!-- Clean Medical Bay Windows -->
+    <rect x="1155" y="190" width="70" height="60" rx="2" fill="#F0FDFA" stroke="#99F6E4" stroke-width="1.5"/>
+    <line x1="1165" y1="195" x2="1215" y2="245" stroke="#FFFFFF" stroke-width="2"/>
+    <!-- Clinic Door -->
+    <rect x="1235" y="190" width="55" height="85" rx="2" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <rect x="1243" y="198" width="39" height="45" rx="2" fill="#CCFBF1"/>
+    <line x1="1262" y1="198" x2="1262" y2="243" stroke="#0D9488" stroke-width="1.5"/>
+    <circle cx="1278" cy="240" r="3" fill="#0D9488"/>
+  </g>
+
+  <!-- SHOP 6: "ARTISAN BAKERY" (Right) -->
+  <g id="shop-bakery">
+    <rect x="1335" y="140" width="175" height="135" rx="3" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="1330" y="135" width="185" height="28" rx="4" fill="#EA580C"/>
+    <text x="1422" y="154" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">ARTISAN BAKERY</text>
+    <!-- Awning (Orange & Yellow Striped) -->
+    <path d="M1325 163L1338 190H1498L1510 163H1325Z" fill="#EA580C"/>
+    <polygon points="1350,163 1358,190 1378,190 1370,163" fill="#FEF08A"/>
+    <polygon points="1390,163 1398,190 1418,190 1410,163" fill="#FEF08A"/>
+    <polygon points="1430,163 1438,190 1458,190 1450,163" fill="#FEF08A"/>
+    <polygon points="1470,163 1478,190 1498,190 1490,163" fill="#FEF08A"/>
+    <!-- Window with bakery items -->
+    <rect x="1350" y="200" width="80" height="55" rx="2" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1.5"/>
+    <!-- Croissant & Bread Silhouettes -->
+    <ellipse cx="1375" cy="235" rx="10" ry="5" fill="#D97706"/>
+    <ellipse cx="1405" cy="232" rx="14" ry="7" fill="#B45309"/>
+    <!-- Bakery Door -->
+    <rect x="1440" y="200" width="55" height="75" rx="2" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <rect x="1448" y="208" width="39" height="35" rx="2" fill="#FEF3C7"/>
+    <circle cx="1482" cy="245" r="3" fill="#EA580C"/>
+  </g>
+
+  <!-- ==================== STREET ELEMENTS, TREES & GREENERY ==================== -->
+
+  <!-- Street Trees -->
+  <!-- Tree 1 (Left near cafe) -->
+  <g>
+    <rect x="238" y="225" width="8" height="50" rx="2" fill="#78350F"/>
+    <circle cx="242" cy="205" r="24" fill="#22C55E"/>
+    <circle cx="230" cy="195" r="18" fill="#16A34A"/>
+    <circle cx="255" cy="195" r="16" fill="#4ADE80"/>
+  </g>
+
+  <!-- Tree 2 (Near bookstore) -->
+  <g>
+    <rect x="442" y="220" width="9" height="55" rx="2" fill="#78350F"/>
+    <circle cx="446" cy="195" r="26" fill="#15803D"/>
+    <circle cx="432" cy="185" r="20" fill="#16A34A"/>
+    <circle cx="462" cy="188" r="18" fill="#4ADE80"/>
+  </g>
+
+  <!-- Tree 3 (Right of Plaza) -->
+  <g>
+    <rect x="922" y="220" width="9" height="55" rx="2" fill="#78350F"/>
+    <circle cx="926" cy="195" r="25" fill="#16A34A"/>
+    <circle cx="914" cy="185" r="18" fill="#22C55E"/>
+    <circle cx="940" cy="188" r="18" fill="#86EFAC"/>
+  </g>
+
+  <!-- Tree 4 (Near Bakery) -->
+  <g>
+    <rect x="1318" y="225" width="8" height="50" rx="2" fill="#78350F"/>
+    <circle cx="1322" cy="205" r="24" fill="#15803D"/>
+    <circle cx="1310" cy="195" r="18" fill="#22C55E"/>
+    <circle cx="1335" cy="196" r="16" fill="#4ADE80"/>
+  </g>
+
+  <!-- Elegant Modern Street Lamps -->
+  <g stroke="#475569" stroke-width="2.5" fill="#F8FAFC">
+    <!-- Lamp 1 -->
+    <path d="M15 275V190C15 180 25 170 35 175" stroke="#475569" fill="none"/>
+    <circle cx="35" cy="178" r="5" fill="#FEF08A" stroke="#CA8A04"/>
+    <!-- Lamp 2 (Near Plaza) -->
+    <path d="M655 275V180C655 170 645 160 635 165" stroke="#475569" fill="none"/>
+    <circle cx="635" cy="168" r="5" fill="#FEF08A" stroke="#CA8A04"/>
+    <!-- Lamp 3 (Near Plaza Right) -->
+    <path d="M925 275V180C925 170 935 160 945 165" stroke="#475569" fill="none"/>
+    <circle cx="945" cy="168" r="5" fill="#FEF08A" stroke="#CA8A04"/>
+    <!-- Lamp 4 (Far Right) -->
+    <path d="M1540 275V190C1540 180 1530 170 1520 175" stroke="#475569" fill="none"/>
+    <circle cx="1520" cy="178" r="5" fill="#FEF08A" stroke="#CA8A04"/>
+  </g>
+
+  <!-- Park Bench on Sidewalk -->
+  <g fill="#D97706" stroke="#92400E" stroke-width="1.5">
+    <rect x="635" y="260" width="32" height="4" rx="1"/>
+    <rect x="635" y="265" width="32" height="4" rx="1"/>
+    <line x1="638" y1="260" x2="638" y2="275" stroke="#334155" stroke-width="2"/>
+    <line x1="664" y1="260" x2="664" y2="275" stroke="#334155" stroke-width="2"/>
+  </g>
+
+  <!-- ==================== PEOPLE & VEHICLES ==================== -->
+
+  <!-- Person 1: Shopper walking with bags -->
+  <g transform="translate(205, 230)">
+    <!-- Head -->
+    <circle cx="12" cy="8" r="6" fill="#FBCFE8"/>
+    <!-- Hair -->
+    <path d="M7 6C7 3 17 3 17 6C17 9 7 9 7 6Z" fill="#374151"/>
+    <!-- Torso / Coat -->
+    <path d="M6 14H18L21 32H3L6 14Z" fill="#0866F5"/>
+    <!-- Legs -->
+    <line x1="8" y1="32" x2="8" y2="45" stroke="#1E293B" stroke-width="3"/>
+    <line x1="16" y1="32" x2="16" y2="45" stroke="#1E293B" stroke-width="3"/>
+    <!-- Shopping Bag -->
+    <rect x="20" y="26" width="10" height="12" rx="2" fill="#F43F5E"/>
+    <path d="M23 26V23C23 21 27 21 27 23V26" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Person 2: Friendly Cyclist on the road/lane -->
+  <g transform="translate(520, 272)">
+    <!-- Bicycle Wheels -->
+    <circle cx="12" cy="28" r="14" stroke="#475569" stroke-width="2.5" fill="none"/>
+    <circle cx="48" cy="28" r="14" stroke="#475569" stroke-width="2.5" fill="none"/>
+    <!-- Bicycle Frame -->
+    <path d="M12 28L28 28L38 16H22L12 28Z" stroke="#2563EB" stroke-width="2.5" fill="none"/>
+    <line x1="28" y1="28" x2="26" y2="12" stroke="#2563EB" stroke-width="2.5"/>
+    <!-- Handlebar & Saddle -->
+    <line x1="36" y1="12" x2="40" y2="12" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="23" y1="12" x2="29" y2="12" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Rider -->
+    <circle cx="34" cy="-2" r="5" fill="#FED7AA"/>
+    <path d="M26 12L32 3L38 12" stroke="#059669" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <line x1="30" y1="7" x2="38" y2="12" stroke="#059669" stroke-width="2.5"/>
+  </g>
+
+  <!-- Person 3: Walking with a friendly dog -->
+  <g transform="translate(1080, 232)">
+    <circle cx="10" cy="8" r="6" fill="#FED7AA"/>
+    <path d="M5 14H15L17 32H3L5 14Z" fill="#F59E0B"/>
+    <line x1="7" y1="32" x2="6" y2="44" stroke="#334155" stroke-width="3"/>
+    <line x1="13" y1="32" x2="14" y2="44" stroke="#334155" stroke-width="3"/>
+    <!-- Leash -->
+    <path d="M14 22L28 36" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="2 1"/>
+    <!-- Little Dog -->
+    <ellipse cx="32" cy="38" rx="8" ry="5" fill="#78350F"/>
+    <circle cx="37" cy="35" r="4" fill="#78350F"/>
+    <line x1="28" y1="41" x2="28" y2="45" stroke="#78350F" stroke-width="2"/>
+    <line x1="34" y1="41" x2="34" y2="45" stroke="#78350F" stroke-width="2"/>
+    <!-- Wagging Tail -->
+    <path d="M25 36C23 33 22 35 24 38" stroke="#78350F" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Eco Delivery Scooter on road -->
+  <g transform="translate(1200, 280)">
+    <!-- Scooter Body -->
+    <circle cx="10" cy="22" r="8" fill="#1E293B"/>
+    <circle cx="45" cy="22" r="8" fill="#1E293B"/>
+    <path d="M10 22H38L32 10H14L10 22Z" fill="#0866F5"/>
+    <line x1="38" y1="22" x2="42" y2="5" stroke="#0866F5" stroke-width="3"/>
+    <line x1="40" y1="5" x2="45" y2="5" stroke="#1E293B" stroke-width="3" stroke-linecap="round"/>
+    <!-- Delivery Box -->
+    <rect x="8" y="2" width="16" height="14" rx="2" fill="#FBBF24" stroke="#D97706" stroke-width="1.5"/>
+    <text x="16" y="12" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="800" fill="#78350F" text-anchor="middle">BOX</text>
+  </g>
+
+  <!-- ==================== FLOATING LOCATION PINS ==================== -->
+  
+  <!-- PIN 1: Above Cafe (Blue SeaNeb Pin) -->
+  <g transform="translate(118, 55)" filter="url(#softDrop)">
+    <line x1="16" y1="40" x2="16" y2="85" stroke="#0866F5" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="16" cy="85" r="3" fill="#0866F5"/>
+    <!-- Pin Body -->
+    <path d="M16 2C7.16344 2 0 9.16344 0 18C0 28.5 16 40 16 40C16 40 32 28.5 32 18C32 9.16344 24.8366 2 16 2Z" fill="url(#pinBlue)"/>
+    <circle cx="16" cy="16" r="7" fill="#FFFFFF"/>
+    <!-- Cup Icon inside -->
+    <path d="M12 14H20V18C20 19.1 19.1 20 18 20H14C12.9 20 12 19.1 12 18V14Z" fill="#0866F5"/>
+  </g>
+
+  <!-- PIN 2: Above Organic Grocery (Emerald Green Pin) -->
+  <g transform="translate(332, 45)" filter="url(#softDrop)">
+    <line x1="16" y1="40" x2="16" y2="80" stroke="#059669" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="16" cy="80" r="3" fill="#059669"/>
+    <path d="M16 2C7.16344 2 0 9.16344 0 18C0 28.5 16 40 16 40C16 40 32 28.5 32 18C32 9.16344 24.8366 2 16 2Z" fill="url(#pinEmerald)"/>
+    <circle cx="16" cy="16" r="7" fill="#FFFFFF"/>
+    <!-- Leaf/Apple Icon -->
+    <circle cx="16" cy="16" r="4" fill="#059669"/>
+  </g>
+
+  <!-- PIN 3: Above Center Plaza (Prominent Brand Gold Pin) -->
+  <g transform="translate(860, 20)" filter="url(#softDrop)">
+    <line x1="18" y1="46" x2="18" y2="60" stroke="#D97706" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="18" cy="60" r="3" fill="#D97706"/>
+    <path d="M18 2C8.05887 2 0 10.0589 0 20C0 31.5 18 46 18 46C18 46 36 31.5 36 20C36 10.0589 27.9411 2 18 2Z" fill="url(#pinAmber)"/>
+    <circle cx="18" cy="18" r="8" fill="#FFFFFF"/>
+    <polygon points="18,12 20,16 24,17 21,20 22,24 18,22 14,24 15,20 12,17 16,16" fill="#D97706"/>
+  </g>
+
+  <!-- PIN 4: Above Boutique (Rose Pin) -->
+  <g transform="translate(1010, 48)" filter="url(#softDrop)">
+    <line x1="16" y1="40" x2="16" y2="78" stroke="#E11D48" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="16" cy="78" r="3" fill="#E11D48"/>
+    <path d="M16 2C7.16344 2 0 9.16344 0 18C0 28.5 16 40 16 40C16 40 32 28.5 32 18C32 9.16344 24.8366 2 16 2Z" fill="url(#pinRose)"/>
+    <circle cx="16" cy="16" r="7" fill="#FFFFFF"/>
+    <circle cx="16" cy="16" r="3.5" fill="#E11D48"/>
+  </g>
+
+  <!-- PIN 5: Above Clinic (Teal Pin) -->
+  <g transform="translate(1208, 42)" filter="url(#softDrop)">
+    <line x1="16" y1="40" x2="16" y2="78" stroke="#0D9488" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <circle cx="16" cy="78" r="3" fill="#0D9488"/>
+    <path d="M16 2C7.16344 2 0 9.16344 0 18C0 28.5 16 40 16 40C16 40 32 28.5 32 18C32 9.16344 24.8366 2 16 2Z" fill="#0D9488"/>
+    <circle cx="16" cy="16" r="7" fill="#FFFFFF"/>
+    <!-- Medical Cross -->
+    <rect x="14" y="12" width="4" height="8" fill="#0D9488"/>
+    <rect x="12" y="14" width="8" height="4" fill="#0D9488"/>
+  </g>
+</svg>
