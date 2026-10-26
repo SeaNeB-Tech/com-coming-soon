@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const fallbackSrc = product.fallbackIcon || 'assets/images/product-icons/fallback-product.svg';
 
         return `
-          <a href="${escapeHtml(product.url || '#')}" class="showcase-product-card" id="showcase-${escapeHtml(product.key || 'item')}" data-product-key="${escapeHtml(product.key || '')}">
+          <a href="${escapeHtml(product.url || '#')}" class="showcase-product-card" id="showcase-${escapeHtml(product.key || 'item')}" data-product-key="${escapeHtml(product.key || '')}" target="_blank" rel="noopener noreferrer">
             <div class="showcase-icon-box">
               <img 
                 src="${escapeHtml(iconSrc)}" 
