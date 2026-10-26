@@ -102,7 +102,7 @@
   const CANONICAL_URLS = {
     'seaneb': 'https://seaneb.com',
     'jobs': 'https://jobs.seaneb.com',
-    'tiffin': 'https://www.tiffinservice.app',
+    'tiffin': 'https://tiffinservice.app',
     'auto': 'https://auto.seaneb.com',
     'property': 'https://property.seaneb.com',
     'news': 'https://news.seaneb.com'
@@ -170,7 +170,7 @@
       tagline: 'Homemade, hygienic meal delivery in your neighborhood',
       icon: 'in/product/tiffin/favicon/tiffin-favicon.png',
       logo: 'in/product/tiffin/logo/tiffin-logo.png',
-      url: 'https://www.tiffinservice.app',
+      url: 'https://tiffinservice.app',
       badge: 'Active'
     }
   ];
